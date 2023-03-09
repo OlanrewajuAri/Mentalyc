@@ -28,9 +28,6 @@ function UploadComponent() {
   const [noteType, setNoteType] = useState("");
   const [clientName, setClientName] = useState("");
   const [uploadEnabled, setUploadEnabled] = useState(false);
-  // const [uploadTasks, setUploadTasks] = useState(
-  // []
-  // );
   const [uploadTasks, setUploadTasks] = useState(
     JSON.parse(localStorage.getItem("uploadTasks")) || []
   );
@@ -85,7 +82,6 @@ function UploadComponent() {
       }
     });
     setProgressingTasks(updatedTasks);
-    // window.localStorage.setItem("uploadTasks", JSON.stringify(updatedTasks));
   };
 
   useEffect(() => {
@@ -96,7 +92,6 @@ function UploadComponent() {
     const storedData = localStorage.getItem("uploadTasks");
 
     if (storedData) {
-      // setUploadTasks(JSON.parse(storedData));
       const parsedData = JSON.parse(storedData);
       setUploadTasks(parsedData.filter(task => task.status !== "completed"));
     }

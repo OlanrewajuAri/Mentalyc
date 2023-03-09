@@ -138,7 +138,8 @@ export const UploadTask = styled.div`
   border: 1px solid #e5e5e5;
   border-radius: 16px;
   align-items: center;
-
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   @media (max-width: 768px) {
     margin-top: 10rem;
     border-radius: 8px;
@@ -152,14 +153,16 @@ export const UploadLength = styled.div`
   font-size: 16px;
   color: ${colors.WHITE};
   border-radius: 50%;
-  padding: 4px 10px;
-  min-width: 14px;
+  padding: 0px 8px;
+  min-width: 8px;
   margin-right: 10px;
   margin-left: 30px;
-
   @media (max-width: 768px) {
     margin-right: 20px;
   }
+
+  align-items: center; 
+  display: flex;
 
 `;
 export const UploadLengthP = styled.p`
@@ -168,8 +171,11 @@ export const UploadLengthP = styled.p`
   font-weight: 500;
   font-size: 20px;
   color: ${colors.BLACK};
-  align-items: center;
-  margin-top: 0.9rem;
+
+
+  margin: 0; 
+  align-items: center; 
+  display: flex; 
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -259,95 +265,3 @@ export const ProgressBar = styled.div`
   border-radius: 8px;
 `;
 
-// export const UploadTask = styled.div`
-//   display: flex;
-//   margin-top: 5rem;
-//   background: ${colors.WHITE};
-//   border: 1px solid #e5e5e5;
-//   border-radius: 16px;
-//   align-items: center;
-// `;
-
-// export const UploadLength = styled.div`
-//   background: ${colors.PINK};
-//   font-family: ${colors.FONTFAMILY_MONTSERRAT};
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 12px;
-//   color: ${colors.WHITE};
-//   border-radius: 50%;
-//   padding: 6px 10px;
-//   margin-right: 10px;
-//   margin-left: 20px;
-// `;
-// export const UploadLengthP = styled.p`
-//   font-family: ${colors.FONTFAMILY_MONTSERRAT};
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 14px;
-//   color: ${colors.BLACK};
-//   margin-top: 0.7rem;
-// `;
-
-// export const StyledTable = styled.table`
-//   width: 100%;
-//   margin-top: 1rem;
-
-//   tbody {
-//     border-spacing: 0px 20px; /* adjust the vertical spacing as needed */
-//   }
-
-//   th {
-//     text-align: left;
-//     padding: 10px;
-//     font-family: ${colors.FONTFAMILY_MONTSERRAT};
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 16px;
-//     line-height: 24px;
-//     color: ${colors.BLACK};
-//   }
-//   tr.even {
-//     background: ${colors.WHITE};
-//     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
-//   }
-
-//   tr.even:first-child {
-//     background: ${colors.WHITE};
-//     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
-//   }
-//   tr.odd {
-//     background: ${colors.WHITE};
-//     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
-//     border-radius: 12px;
-//   }
-
-//   td {
-//     padding: 10px;
-//     border-radius: 8px;
-//     font-family: ${colors.FONTFAMILY_MONTSERRAT};
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 24px;
-//     color: ${colors.BLACK};
-//   }
-//   .progress {
-//     height: 20px;
-//     background-color: #b2b2b2;
-//     position: relative;
-//     margin-top: 5px;
-//     border-radius: 8px;
-//   }
-//   .progress-bar {
-//     height: 100%;
-//     background-color: ${colors.GREEN};
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//   }
-// `;
-
-// export const HandleE = styled.div`
-//   text-align: right;
-// `;
