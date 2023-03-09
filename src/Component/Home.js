@@ -1,7 +1,6 @@
 import React from "react";
 import Help from "../Images/Help.svg";
 import { HomeFlex, HomeFlexP } from "./MyStyles/Home";
-import Test from "./Test";
 import UploadComponent from "./UploadComponent";
 
 const Home = () => {
@@ -18,7 +17,6 @@ const Home = () => {
       </HomeFlex>
   
       <UploadComponent />
-      {/* <Test /> */}
     </div>
   );
 };
